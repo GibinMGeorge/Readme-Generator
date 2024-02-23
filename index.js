@@ -51,8 +51,68 @@ const questions = [
     }
 ];
 
+// Function to generate README content
+
+function generateReadme(answers) {
+    // Generate the content of README.md using the provided answers
+    // Return the generated content
+    return `
+# ${answers.title}
+
+## Description
+${answers.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+This project is licensed under the ${answers.license} License.
+
+## Contributing
+${answers.contribution}
+
+## Tests
+${answers.tests}
+
+## Questions
+For additional questions, contact [${answers.githubUsername}](https://github.com/${answers.githubUsername}) or email ${answers.email}.
+`;
+}
+
+// Function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            console.error('Error writing to README.md:', err);
+        } else {
+            console.log('README.md successfully created!');
+        }
+    });
+}
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    function writeToFile(fileName, data) {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                console.error('Error writing to README.md:', err);
+            } else {
+                console.log('README.md successfully created!');
+            }
+        });
+    }    
+}
 
 // TODO: Create a function to initialize app
 function init() {}
