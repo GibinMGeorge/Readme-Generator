@@ -29,6 +29,7 @@ run the javascript file
 ## Usage
 
 ![screen ](assets/readmegenerator.mp4)
+https://github.com/GibinMGeorge/Readme-Generator/blob/main/assets/readmegenerator.mp4
 
 ## License
 This project is licensed under the None License.
