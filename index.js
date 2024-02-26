@@ -103,19 +103,27 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    function writeToFile(fileName, data) {
-        fs.writeFile(fileName, data, err => {
-            if (err) {
-                console.error('Error writing to README.md:', err);
-            } else {
-                console.log('README.md successfully created!');
-            }
-        });
-    }    
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            console.error('Error writing to README.md:', err);
+        } else {
+            console.log('README.md successfully created!');
+        }
+    });
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then(answers => {
+            const readmeContent = generateReadme(answers);
+            writeToFile('README.md', readmeContent);
+        })
+        .catch(error => {
+            console.error('Error initializing app:', error);
+        });
+}
 
 // Function call to initialize app
 init();
