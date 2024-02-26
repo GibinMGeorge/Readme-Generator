@@ -1,16 +1,21 @@
 {
   "type": "module",
-  "name": "your-package-name",
-  "version": "1.0.0",
+  "name": "gmg",
+  "version": "1.0.1",
   "description": "Your package description",
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "gmg",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "aaa"
   }
 }

@@ -2,7 +2,9 @@
 # ReadME Generator
 
 ## Description
-This will generate a readme for the project
+Used to generate a readme file for any project. 
+This allows a user to enter Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and any Questions related with the project.
+
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,19 +15,22 @@ This will generate a readme for the project
 - [Questions](#questions)
 
 ## Installation
-nothing much for now
+initialize npm - npm init
+install inquirer package - npm i inquirer
+run the javascript file
 
 ## Usage
-nothing much, just use carefullyyyyy
+
+![screen ](assets/readmegenerator.mp4)
 
 ## License
 This project is licensed under the None License.
 
 ## Contributing
-nope
+
 
 ## Tests
-nothing to test......
+
 
 ## Questions
 For additional questions, contact [gmg18gmg](https://github.com/gmg18gmg) or email gmg18@gmg.com.
