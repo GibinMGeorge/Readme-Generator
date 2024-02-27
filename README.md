@@ -28,7 +28,7 @@ run the javascript file
 
 ## Usage
 
-![screen ](assets/readmegenerator.mp4)
+https://drive.google.com/file/d/1jIjbcvzM2pQowTxu4I0vb9A9ug3oLz1c/view?usp=sharing
 
 ## License
 This project is licensed under the None License.
